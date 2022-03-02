@@ -1,16 +1,16 @@
 
-const clientCont = require ('../controller/clientsController');
-
 const express = require ('express');
+
+const clientCont = require ('../controller/clientsController');
 
 const route = express.Router();
 
-route.get('/clients', clientCont.getclients);
+// route.get('/clients', clientCont.getclients);
 
-route.get('/client', clientCont.getClient);
+// route.get('/client', clientCont.getClient);
 
-route.post('/signUp', clientCont.postedClient);
+// route.post('/signUp', clientCont.postedClient);
 
-route.delete('./delete', clientCont.deleteClient);
+route.delete('./deleteUser', clientCont.delclient);
 
-module.export = route;
+module.exports = route;
